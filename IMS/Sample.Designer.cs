@@ -28,57 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
+            LeftPanel = new Panel();
+            LeftTopPanel = new Panel();
             label1 = new Label();
+            RightPanel = new Panel();
+            RightTopPanel = new Panel();
             label2 = new Label();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
+            LeftPanel.SuspendLayout();
+            LeftTopPanel.SuspendLayout();
+            RightPanel.SuspendLayout();
+            RightTopPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // LeftPanel
             // 
-            panel1.BackColor = Color.SteelBlue;
-            panel1.Controls.Add(panel3);
-            panel1.Dock = DockStyle.Left;
-            panel1.ForeColor = Color.White;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(200, 622);
-            panel1.TabIndex = 0;
+            LeftPanel.BackColor = Color.SteelBlue;
+            LeftPanel.Controls.Add(LeftTopPanel);
+            LeftPanel.Dock = DockStyle.Left;
+            LeftPanel.ForeColor = Color.White;
+            LeftPanel.Location = new Point(0, 0);
+            LeftPanel.Name = "LeftPanel";
+            LeftPanel.Size = new Size(200, 622);
+            LeftPanel.TabIndex = 0;
             // 
-            // panel2
+            // LeftTopPanel
             // 
-            panel2.BackColor = Color.FromArgb(237, 237, 237);
-            panel2.Controls.Add(panel4);
-            panel2.Dock = DockStyle.Fill;
-            panel2.Font = new Font("Microsoft Sans Serif", 8.25F);
-            panel2.Location = new Point(200, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(924, 622);
-            panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(label1);
-            panel3.Dock = DockStyle.Top;
-            panel3.Location = new Point(0, 0);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 50);
-            panel3.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(label2);
-            panel4.Dock = DockStyle.Top;
-            panel4.Location = new Point(0, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(924, 50);
-            panel4.TabIndex = 0;
+            LeftTopPanel.Controls.Add(label1);
+            LeftTopPanel.Dock = DockStyle.Top;
+            LeftTopPanel.Location = new Point(0, 0);
+            LeftTopPanel.Name = "LeftTopPanel";
+            LeftTopPanel.Size = new Size(200, 50);
+            LeftTopPanel.TabIndex = 0;
             // 
             // label1
             // 
@@ -91,6 +71,26 @@
             label1.Text = "Welcome";
             label1.TextAlign = ContentAlignment.MiddleRight;
             label1.Click += label1_Click;
+            // 
+            // RightPanel
+            // 
+            RightPanel.BackColor = Color.FromArgb(237, 237, 237);
+            RightPanel.Controls.Add(RightTopPanel);
+            RightPanel.Dock = DockStyle.Fill;
+            RightPanel.Font = new Font("Microsoft Sans Serif", 8.25F);
+            RightPanel.Location = new Point(200, 0);
+            RightPanel.Name = "RightPanel";
+            RightPanel.Size = new Size(924, 622);
+            RightPanel.TabIndex = 1;
+            // 
+            // RightTopPanel
+            // 
+            RightTopPanel.Controls.Add(label2);
+            RightTopPanel.Dock = DockStyle.Top;
+            RightTopPanel.Location = new Point(0, 0);
+            RightTopPanel.Name = "RightTopPanel";
+            RightTopPanel.Size = new Size(924, 50);
+            RightTopPanel.TabIndex = 0;
             // 
             // label2
             // 
@@ -108,23 +108,23 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1124, 622);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            ControlBox = false;
+            Controls.Add(RightPanel);
+            Controls.Add(LeftPanel);
             Name = "Sample";
-            Text = "Sample";
-            panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel4.ResumeLayout(false);
+            LeftPanel.ResumeLayout(false);
+            LeftTopPanel.ResumeLayout(false);
+            RightPanel.ResumeLayout(false);
+            RightTopPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel3;
-        private Panel panel2;
-        private Panel panel4;
+        protected Panel LeftPanel;
+        private Panel LeftTopPanel;
+        private Panel RightPanel;
+        private Panel RightTopPanel;
         private Label label1;
         private Label label2;
     }

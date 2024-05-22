@@ -36,7 +36,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1094, 593);
             Name = "MDI";
-            Text = "s";
+            WindowState = FormWindowState.Maximized;
+            Load += MDI_Load;
             ResumeLayout(false);
         }
 
