@@ -6,6 +6,7 @@ C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\bin\Debug\net8.0-windows\IMS.pdb
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.login.resources
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.MDI.resources
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.Sample.resources
+C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.settings.resources
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.csproj.GenerateResource.cache
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.AssemblyInfoInputs.cache
