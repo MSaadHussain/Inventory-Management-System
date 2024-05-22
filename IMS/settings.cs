@@ -55,7 +55,7 @@ namespace IMS
                 if(server_text.Text != "" && db_text.Text != "")
                 {
                     s = "Data Source=" + server_text.Text + ";Ïnitial Catalog=" + db_text.Text + ";Integrated Security=True;";
-                    File.WriteAllText(path, s);
+                    File.WriteAllText(path+"\\connect", s);
                 }
                 else
                 {
@@ -67,7 +67,7 @@ namespace IMS
                 if(server_text.Text !="" && db_text.Text != "" && username_textbox_db.Text != "" && password_textbox_db.Text != "")
                 {
                     s = "Data Source=" + server_text.Text + ";Ïnitial Catalog=" + db_text.Text + ";User ID="+username_textbox_db.Text+";Password="+password_textbox_db.Text+";";
-                    File.WriteAllText(path, s);
+                    File.WriteAllText(path + "\\connect", s);
                     
 
                 }
