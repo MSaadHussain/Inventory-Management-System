@@ -1,6 +1,3 @@
-using System.IO;
-
-
 namespace IMS
 {
     public partial class MDI : Form
@@ -9,19 +6,27 @@ namespace IMS
         {
             InitializeComponent();
             this.IsMdiContainer = true;
-
         }
+
         private void MDI_Load(object sender, EventArgs e)
         {
-            string Path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            if(File.Exists(Path+"\\connect"))
+            string path = "C:\\Users\\muham\\Documents\\connect.cfg";
+            if (File.Exists(path))
             {
-            login log = new login();
-            MainClass.ShowWindow(log,this);
+                login log = new login();
+                MainClass.ShowWindow(log, this);
             }
-            settings set = new settings();
-            MainClass.ShowWindow(set,this);
+            else
+            {
+                settings set = new settings();
+                MainClass.ShowWindow(set, this);
+            }
+        }
 
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            settings set = new settings();
+            MainClass.ShowWindow(set, this);
         }
     }
 }

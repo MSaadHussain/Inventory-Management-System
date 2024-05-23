@@ -57,7 +57,7 @@
             LeftTopPanel.Dock = DockStyle.Top;
             LeftTopPanel.Location = new Point(0, 0);
             LeftTopPanel.Name = "LeftTopPanel";
-            LeftTopPanel.Size = new Size(200, 50);
+            LeftTopPanel.Size = new Size(200, 78);
             LeftTopPanel.TabIndex = 0;
             // 
             // label1
@@ -66,7 +66,7 @@
             label1.Font = new Font("Malgun Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(100, 0);
             label1.Name = "label1";
-            label1.Size = new Size(100, 50);
+            label1.Size = new Size(100, 78);
             label1.TabIndex = 0;
             label1.Text = "Welcome";
             label1.TextAlign = ContentAlignment.MiddleRight;
@@ -89,7 +89,7 @@
             RightTopPanel.Dock = DockStyle.Top;
             RightTopPanel.Location = new Point(0, 0);
             RightTopPanel.Name = "RightTopPanel";
-            RightTopPanel.Size = new Size(924, 50);
+            RightTopPanel.Size = new Size(924, 78);
             RightTopPanel.TabIndex = 0;
             // 
             // label2
@@ -98,7 +98,7 @@
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(0, 0);
             label2.Name = "label2";
-            label2.Size = new Size(73, 50);
+            label2.Size = new Size(73, 78);
             label2.TabIndex = 1;
             label2.Text = "USER";
             label2.TextAlign = ContentAlignment.MiddleLeft;

@@ -50,7 +50,7 @@ namespace IMS
         private void Database_Save_button_Click(object sender, EventArgs e)
         {
             string s;
-            string path = "C:\\Users\\muham\\Documents\\connect";
+            string path = "C:\\Users\\muham\\Documents\\connect.cfg";
             //string newPath = path + "\\connect";
            // string newPath = Path.Combine(path, "connect");
 
