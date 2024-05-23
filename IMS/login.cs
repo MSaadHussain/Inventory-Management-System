@@ -21,5 +21,11 @@ namespace IMS
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            homescreen obj = new homescreen();
+            MainClass.ShowWindow(obj, this,MDI.ActiveForm);
+        }
     }
 }

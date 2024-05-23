@@ -21,5 +21,10 @@ namespace IMS
         {
 
         }
+
+        private void Users_Load(object sender, EventArgs e)
+        {
+            MainClass.disable(LeftPanel);
+        }
     }
 }

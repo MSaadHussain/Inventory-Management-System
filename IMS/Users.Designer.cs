@@ -44,6 +44,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(939, 566);
             Name = "Users";
+            Load += Users_Load;
             ResumeLayout(false);
         }
 

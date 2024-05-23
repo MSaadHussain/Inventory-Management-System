@@ -80,6 +80,7 @@
             // 
             // DeleteButton
             // 
+            DeleteButton.Cursor = Cursors.Hand;
             DeleteButton.Dock = DockStyle.Fill;
             DeleteButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             DeleteButton.Location = new Point(378, 3);
@@ -91,6 +92,7 @@
             // 
             // SaveButton
             // 
+            SaveButton.Cursor = Cursors.Hand;
             SaveButton.Dock = DockStyle.Fill;
             SaveButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveButton.Location = new Point(253, 3);
@@ -102,6 +104,7 @@
             // 
             // EditButton
             // 
+            EditButton.Cursor = Cursors.Hand;
             EditButton.Dock = DockStyle.Fill;
             EditButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             EditButton.Location = new Point(128, 3);
@@ -113,6 +116,7 @@
             // 
             // AddButton
             // 
+            AddButton.Cursor = Cursors.Hand;
             AddButton.Dock = DockStyle.Fill;
             AddButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddButton.Location = new Point(3, 3);

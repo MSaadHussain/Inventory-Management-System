@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             RightPanel.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -71,38 +71,16 @@
             tableLayoutPanel1.Size = new Size(849, 507);
             tableLayoutPanel1.TabIndex = 1;
             // 
-            // button1
+            // button5
             // 
-            button1.Dock = DockStyle.Fill;
-            button1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(206, 120);
-            button1.TabIndex = 2;
-            button1.Text = "Users";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Dock = DockStyle.Fill;
-            button2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(215, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(206, 120);
-            button2.TabIndex = 3;
-            button2.Text = "Products";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Dock = DockStyle.Fill;
-            button3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(427, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(206, 120);
-            button3.TabIndex = 4;
-            button3.Text = "Stocks";
-            button3.UseVisualStyleBackColor = true;
+            button5.Dock = DockStyle.Fill;
+            button5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Location = new Point(3, 129);
+            button5.Name = "button5";
+            button5.Size = new Size(206, 120);
+            button5.TabIndex = 7;
+            button5.Text = "Sales";
+            button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -115,16 +93,39 @@
             button4.Text = "Invoice";
             button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // button3
             // 
-            button5.Dock = DockStyle.Fill;
-            button5.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(3, 129);
-            button5.Name = "button5";
-            button5.Size = new Size(206, 120);
-            button5.TabIndex = 7;
-            button5.Text = "Sales";
-            button5.UseVisualStyleBackColor = true;
+            button3.Dock = DockStyle.Fill;
+            button3.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(427, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(206, 120);
+            button3.TabIndex = 4;
+            button3.Text = "Stocks";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Dock = DockStyle.Fill;
+            button2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(215, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(206, 120);
+            button2.TabIndex = 3;
+            button2.Text = "Products";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Fill;
+            button1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(3, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(206, 120);
+            button1.TabIndex = 2;
+            button1.Text = "Users";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // homescreen
             // 

@@ -50,6 +50,10 @@
             LeftPanel.Controls.SetChildIndex(textBox2, 0);
             LeftPanel.Controls.SetChildIndex(button1, 0);
             // 
+            // RightPanel
+            // 
+            RightPanel.Size = new Size(600, 450);
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -97,6 +101,7 @@
             button1.TabIndex = 5;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // login
             // 
