@@ -10,20 +10,17 @@ using System.Windows.Forms;
 
 namespace IMS
 {
-    public partial class Sample : Form
+    public partial class sample2 : Sample
     {
-        public Sample()
+        public sample2()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void RightPanel_Paint(object sender, PaintEventArgs e)
-        {
+            homescreen obj = new homescreen();
+            MainClass.ShowWindow(obj,this,MDI.ActiveForm);
 
         }
     }

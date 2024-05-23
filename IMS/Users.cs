@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace IMS
 {
-    public partial class Sample : Form
+    public partial class Users : sample2
     {
-        public Sample()
+        public Users()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RightPanel_Paint(object sender, PaintEventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

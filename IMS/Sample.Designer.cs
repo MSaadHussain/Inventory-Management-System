@@ -82,6 +82,7 @@
             RightPanel.Name = "RightPanel";
             RightPanel.Size = new Size(924, 622);
             RightPanel.TabIndex = 1;
+            RightPanel.Paint += RightPanel_Paint;
             // 
             // RightTopPanel
             // 
@@ -123,7 +124,7 @@
 
         protected Panel LeftPanel;
         private Panel LeftTopPanel;
-        private Panel RightPanel;
+        protected Panel RightPanel;
         private Panel RightTopPanel;
         private Label label1;
         private Label label2;
