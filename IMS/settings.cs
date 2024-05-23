@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Microsoft.VisualBasic.Logging;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace IMS
 {
@@ -49,7 +50,11 @@ namespace IMS
         private void Database_Save_button_Click(object sender, EventArgs e)
         {
             string s;
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\connect";
+            string path = "C:\\Users\\muham\\Documents\\connect";
+            //string newPath = path + "\\connect";
+           // string newPath = Path.Combine(path, "connect");
+
+
             if (security_checkBox.Checked)
             {
                 if(server_text.Text != "" && db_text.Text != "")
