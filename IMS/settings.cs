@@ -49,13 +49,21 @@ namespace IMS
         private void Database_Save_button_Click(object sender, EventArgs e)
         {
             string s;
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\connect";
             if (security_checkBox.Checked)
             {
                 if(server_text.Text != "" && db_text.Text != "")
                 {
-                    s = "Data Source=" + server_text.Text + ";Ïnitial Catalog=" + db_text.Text + ";Integrated Security=True;";
-                    File.WriteAllText(path+"\\connect", s);
+                    s = "Data Source=" + server_text.Text + ";Initial Catalog=" + db_text.Text + ";Integrated Security=True;";
+                    File.WriteAllText(path, s);
+
+                    DialogResult dr = MessageBox.Show("Database Settings Saved!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (dr == DialogResult.OK)
+                    {
+                        login log = new login();
+                        MainClass.ShowWindow(log, this, MDI.ActiveForm);
+                    }
+
                 }
                 else
                 {
@@ -66,9 +74,16 @@ namespace IMS
             {
                 if(server_text.Text !="" && db_text.Text != "" && username_textbox_db.Text != "" && password_textbox_db.Text != "")
                 {
-                    s = "Data Source=" + server_text.Text + ";Ïnitial Catalog=" + db_text.Text + ";User ID="+username_textbox_db.Text+";Password="+password_textbox_db.Text+";";
-                    File.WriteAllText(path + "\\connect", s);
-                    
+                    s = "Data Source=" + server_text.Text + ";Initial Catalog=" + db_text.Text + ";User ID="+username_textbox_db.Text+";Password="+password_textbox_db.Text+";";
+                    File.WriteAllText(path, s);
+
+                    DialogResult dr = MessageBox.Show("Database Settings Saved!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (dr == DialogResult.OK)
+                    {
+                        login log = new login();
+                        MainClass.ShowWindow(log, this, MDI.ActiveForm);
+                    }
+
 
                 }
                 else
@@ -77,12 +92,7 @@ namespace IMS
                 }
 
             }
-            DialogResult dr = MessageBox.Show("Database Settings Saved!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            if(dr == DialogResult.OK)
-            {
-                login log = new login();
-                MainClass.ShowWindow(log,this,MDI.ActiveForm);
-            }
+
         }
 
     }
