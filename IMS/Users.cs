@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,11 +56,13 @@ namespace IMS
             {
                 if (edit == 0) //save operation
                 {
-
+                    insertion i = new insertion();
+                    i.insertuser(nametxtbox.Text, usernametxtbox.Text, passwordtxtbox.Text, emailtxtbox.Text, phonetxtbox.Text);
                 }
                 else if(edit == 1) // code for updating !
                 {
-
+                    updation u = new updation();
+                    u.updateuser(0, nametxtbox.Text, usernametxtbox.Text, passwordtxtbox.Text, emailtxtbox.Text, phonetxtbox.Text);
                 }
             }
 
@@ -67,7 +70,7 @@ namespace IMS
 
         public override void DeleteButton_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         public override void textBox1_TextChanged(object sender, EventArgs e)

@@ -11,8 +11,8 @@ namespace IMS
 {
     internal class MainClass
     {
-        private static string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        private static string s = File.ReadAllText(path+"\\connect");
+        private static string path = "C:\\Users\\muham\\Documents\\connect.cfg";
+        private static string s = File.ReadAllText(path);
 
         public static SqlConnection con = new SqlConnection(s);
 
