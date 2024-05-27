@@ -3,11 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Data.SqlClient;
+
 
 namespace IMS
 {
     internal class MainClass
     {
+        private static string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        private static string s = File.ReadAllText(path+"\\connect");
+
+        public static SqlConnection con = new SqlConnection(s);
+
+        public static DialogResult showMsg(string msg,string heading, string type)
+        {
+            if (type == "success")
+            {
+                return MessageBox.Show(msg, heading, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                return MessageBox.Show(msg, heading, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+
+
         public static void ShowWindow(Form openWin , Form clsWin, Form MDIWin)
         {
             clsWin.Close();

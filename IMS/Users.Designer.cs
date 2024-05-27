@@ -28,94 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            nametxtbox = new TextBox();
+            phonetxtbox = new TextBox();
+            emailtxtbox = new TextBox();
+            passwordtxtbox = new TextBox();
+            usernametxtbox = new TextBox();
             username_label = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
+            panel2 = new Panel();
+            name_error_label = new Label();
+            phone_error_label = new Label();
+            password_error_label = new Label();
+            username_error_label = new Label();
+            Emailerror_label = new Label();
             LeftPanel.SuspendLayout();
             SuspendLayout();
             // 
             // LeftPanel
             // 
+            LeftPanel.Controls.Add(Emailerror_label);
+            LeftPanel.Controls.Add(username_error_label);
+            LeftPanel.Controls.Add(password_error_label);
+            LeftPanel.Controls.Add(phone_error_label);
+            LeftPanel.Controls.Add(name_error_label);
+            LeftPanel.Controls.Add(panel2);
             LeftPanel.Controls.Add(label7);
             LeftPanel.Controls.Add(label6);
             LeftPanel.Controls.Add(label5);
             LeftPanel.Controls.Add(label4);
             LeftPanel.Controls.Add(label3);
             LeftPanel.Controls.Add(username_label);
-            LeftPanel.Controls.Add(textBox6);
-            LeftPanel.Controls.Add(textBox5);
-            LeftPanel.Controls.Add(textBox4);
-            LeftPanel.Controls.Add(textBox3);
-            LeftPanel.Controls.Add(textBox2);
+            LeftPanel.Controls.Add(usernametxtbox);
+            LeftPanel.Controls.Add(passwordtxtbox);
+            LeftPanel.Controls.Add(emailtxtbox);
+            LeftPanel.Controls.Add(phonetxtbox);
+            LeftPanel.Controls.Add(nametxtbox);
             LeftPanel.Size = new Size(200, 566);
-            LeftPanel.Controls.SetChildIndex(textBox2, 0);
-            LeftPanel.Controls.SetChildIndex(textBox3, 0);
-            LeftPanel.Controls.SetChildIndex(textBox4, 0);
-            LeftPanel.Controls.SetChildIndex(textBox5, 0);
-            LeftPanel.Controls.SetChildIndex(textBox6, 0);
+            LeftPanel.Controls.SetChildIndex(nametxtbox, 0);
+            LeftPanel.Controls.SetChildIndex(phonetxtbox, 0);
+            LeftPanel.Controls.SetChildIndex(emailtxtbox, 0);
+            LeftPanel.Controls.SetChildIndex(passwordtxtbox, 0);
+            LeftPanel.Controls.SetChildIndex(usernametxtbox, 0);
             LeftPanel.Controls.SetChildIndex(username_label, 0);
             LeftPanel.Controls.SetChildIndex(label3, 0);
             LeftPanel.Controls.SetChildIndex(label4, 0);
             LeftPanel.Controls.SetChildIndex(label5, 0);
             LeftPanel.Controls.SetChildIndex(label6, 0);
             LeftPanel.Controls.SetChildIndex(label7, 0);
+            LeftPanel.Controls.SetChildIndex(panel2, 0);
+            LeftPanel.Controls.SetChildIndex(name_error_label, 0);
+            LeftPanel.Controls.SetChildIndex(phone_error_label, 0);
+            LeftPanel.Controls.SetChildIndex(password_error_label, 0);
+            LeftPanel.Controls.SetChildIndex(username_error_label, 0);
+            LeftPanel.Controls.SetChildIndex(Emailerror_label, 0);
             // 
             // RightPanel
             // 
             RightPanel.Size = new Size(739, 566);
             // 
-            // textBox2
+            // nametxtbox
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(12, 179);
-            textBox2.MaxLength = 20;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(172, 23);
-            textBox2.TabIndex = 2;
+            nametxtbox.BorderStyle = BorderStyle.FixedSingle;
+            nametxtbox.Location = new Point(12, 179);
+            nametxtbox.MaxLength = 20;
+            nametxtbox.Name = "nametxtbox";
+            nametxtbox.Size = new Size(172, 23);
+            nametxtbox.TabIndex = 2;
+            nametxtbox.TextChanged += textBox2_TextChanged;
             // 
-            // textBox3
+            // phonetxtbox
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(12, 319);
-            textBox3.MaxLength = 20;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(172, 23);
-            textBox3.TabIndex = 3;
+            phonetxtbox.BorderStyle = BorderStyle.FixedSingle;
+            phonetxtbox.Location = new Point(12, 319);
+            phonetxtbox.MaxLength = 20;
+            phonetxtbox.Name = "phonetxtbox";
+            phonetxtbox.Size = new Size(172, 23);
+            phonetxtbox.TabIndex = 3;
             // 
-            // textBox4
+            // emailtxtbox
             // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(12, 365);
-            textBox4.MaxLength = 20;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(172, 23);
-            textBox4.TabIndex = 4;
+            emailtxtbox.BorderStyle = BorderStyle.FixedSingle;
+            emailtxtbox.Location = new Point(12, 365);
+            emailtxtbox.MaxLength = 20;
+            emailtxtbox.Name = "emailtxtbox";
+            emailtxtbox.Size = new Size(172, 23);
+            emailtxtbox.TabIndex = 4;
             // 
-            // textBox5
+            // passwordtxtbox
             // 
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Location = new Point(12, 273);
-            textBox5.MaxLength = 20;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(172, 23);
-            textBox5.TabIndex = 5;
+            passwordtxtbox.BorderStyle = BorderStyle.FixedSingle;
+            passwordtxtbox.Location = new Point(12, 273);
+            passwordtxtbox.MaxLength = 20;
+            passwordtxtbox.Name = "passwordtxtbox";
+            passwordtxtbox.Size = new Size(172, 23);
+            passwordtxtbox.TabIndex = 5;
+            passwordtxtbox.UseSystemPasswordChar = true;
             // 
-            // textBox6
+            // usernametxtbox
             // 
-            textBox6.BorderStyle = BorderStyle.FixedSingle;
-            textBox6.Location = new Point(12, 227);
-            textBox6.MaxLength = 20;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(172, 23);
-            textBox6.TabIndex = 6;
+            usernametxtbox.BorderStyle = BorderStyle.FixedSingle;
+            usernametxtbox.Location = new Point(12, 227);
+            usernametxtbox.MaxLength = 20;
+            usernametxtbox.Name = "usernametxtbox";
+            usernametxtbox.Size = new Size(172, 23);
+            usernametxtbox.TabIndex = 6;
             // 
             // username_label
             // 
@@ -176,6 +196,69 @@
             label7.TabIndex = 12;
             label7.Text = "Password";
             // 
+            // panel2
+            // 
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 124);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 23);
+            panel2.TabIndex = 2;
+            // 
+            // name_error_label
+            // 
+            name_error_label.AutoSize = true;
+            name_error_label.ForeColor = Color.Red;
+            name_error_label.Location = new Point(61, 161);
+            name_error_label.Name = "name_error_label";
+            name_error_label.Size = new Size(12, 15);
+            name_error_label.TabIndex = 13;
+            name_error_label.Text = "*";
+            name_error_label.Visible = false;
+            // 
+            // phone_error_label
+            // 
+            phone_error_label.AutoSize = true;
+            phone_error_label.ForeColor = Color.Red;
+            phone_error_label.Location = new Point(81, 298);
+            phone_error_label.Name = "phone_error_label";
+            phone_error_label.Size = new Size(12, 15);
+            phone_error_label.TabIndex = 14;
+            phone_error_label.Text = "*";
+            phone_error_label.Visible = false;
+            // 
+            // password_error_label
+            // 
+            password_error_label.AutoSize = true;
+            password_error_label.ForeColor = Color.Red;
+            password_error_label.Location = new Point(83, 253);
+            password_error_label.Name = "password_error_label";
+            password_error_label.Size = new Size(12, 15);
+            password_error_label.TabIndex = 15;
+            password_error_label.Text = "*";
+            password_error_label.Visible = false;
+            // 
+            // username_error_label
+            // 
+            username_error_label.AutoSize = true;
+            username_error_label.ForeColor = Color.Red;
+            username_error_label.Location = new Point(83, 209);
+            username_error_label.Name = "username_error_label";
+            username_error_label.Size = new Size(12, 15);
+            username_error_label.TabIndex = 16;
+            username_error_label.Text = "*";
+            username_error_label.Visible = false;
+            // 
+            // Emailerror_label
+            // 
+            Emailerror_label.AutoSize = true;
+            Emailerror_label.ForeColor = Color.Red;
+            Emailerror_label.Location = new Point(49, 346);
+            Emailerror_label.Name = "Emailerror_label";
+            Emailerror_label.Size = new Size(12, 15);
+            Emailerror_label.TabIndex = 17;
+            Emailerror_label.Text = "*";
+            Emailerror_label.Visible = false;
+            // 
             // Users
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -190,16 +273,22 @@
 
         #endregion
 
-        private TextBox textBox2;
+        private TextBox nametxtbox;
         private Label label7;
         private Label label6;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label username_label;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox usernametxtbox;
+        private TextBox passwordtxtbox;
+        private TextBox emailtxtbox;
+        private TextBox phonetxtbox;
+        private Panel panel2;
+        private Label Emailerror_label;
+        private Label username_error_label;
+        private Label password_error_label;
+        private Label phone_error_label;
+        private Label name_error_label;
     }
 }
