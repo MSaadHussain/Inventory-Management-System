@@ -21,3 +21,26 @@ C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\refint\IMS.dl
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.pdb
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\IMS.genruntimeconfig.cache
 C:\Users\muham\Desktop\IMS _ Saad\IMS\IMS\obj\Debug\net8.0-windows\ref\IMS.dll
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\bin\Debug\net8.0-windows\IMS.exe
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\bin\Debug\net8.0-windows\IMS.deps.json
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\bin\Debug\net8.0-windows\IMS.runtimeconfig.json
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\bin\Debug\net8.0-windows\IMS.dll
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\bin\Debug\net8.0-windows\IMS.pdb
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.homescreen.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.login.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.MDI.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.Sample.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.sample2.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.settings.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.Users.resources
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.csproj.GenerateResource.cache
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.AssemblyInfoInputs.cache
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.AssemblyInfo.cs
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.csproj.CoreCompileInputs.cache
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.sourcelink.json
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.dll
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\refint\IMS.dll
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.pdb
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\IMS.genruntimeconfig.cache
+C:\Users\muham\Desktop\Clone IMS\Inventory-Management-System\IMS\obj\Debug\net8.0-windows\ref\IMS.dll

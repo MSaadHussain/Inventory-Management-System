@@ -89,6 +89,7 @@
             DeleteButton.TabIndex = 3;
             DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
             // SaveButton
             // 
@@ -101,6 +102,7 @@
             SaveButton.TabIndex = 2;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
             // EditButton
             // 
@@ -113,6 +115,7 @@
             EditButton.TabIndex = 1;
             EditButton.Text = "Edit";
             EditButton.UseVisualStyleBackColor = true;
+            EditButton.Click += EditButton_Click;
             // 
             // AddButton
             // 
@@ -125,6 +128,7 @@
             AddButton.TabIndex = 0;
             AddButton.Text = "Add";
             AddButton.UseVisualStyleBackColor = true;
+            AddButton.Click += AddButton_Click;
             // 
             // groupBox1
             // 
@@ -144,6 +148,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(291, 20);
             textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // panel1
             // 

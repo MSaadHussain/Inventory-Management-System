@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muham\\Desktop\\IMS _ Saad\\IMS\\IMS\\IMS.csproj",
+      "projectUniqueName": "C:\\Users\\muham\\Desktop\\Clone IMS\\Inventory-Management-System\\IMS\\IMS.csproj",
       "projectName": "IMS",
-      "projectPath": "C:\\Users\\muham\\Desktop\\IMS _ Saad\\IMS\\IMS\\IMS.csproj",
+      "projectPath": "C:\\Users\\muham\\Desktop\\Clone IMS\\Inventory-Management-System\\IMS\\IMS.csproj",
       "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muham\\Desktop\\IMS _ Saad\\IMS\\IMS\\obj\\",
+      "outputPath": "C:\\Users\\muham\\Desktop\\Clone IMS\\Inventory-Management-System\\IMS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\muham\\AppData\\Roaming\\NuGet\\NuGet.Config",
