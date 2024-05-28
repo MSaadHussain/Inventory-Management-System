@@ -5,12 +5,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IMS
 {
     internal class updation
     {
-        public void updateuser(int id ,string name, string username, string password, string email, string phone)
+        public void updateuser(int id ,string name, string username, string password, string email, string phone, Int16 status)
         {
             try
             {
@@ -22,6 +23,8 @@ namespace IMS
                 cmd.Parameters.AddWithValue("@phone", phone);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@id",id);
+                cmd.Parameters.AddWithValue("@status", status);
+
 
                 MainClass.con.Open();
                 cmd.ExecuteNonQuery();

@@ -37,6 +37,7 @@
             textBox1 = new TextBox();
             panel1 = new Panel();
             button1 = new Button();
+            ViewBTN = new Button();
             LeftPanel.SuspendLayout();
             RightPanel.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -59,17 +60,19 @@
             // 
             // tableLayoutPanel1
             // 
-            tableLayoutPanel1.ColumnCount = 5;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.5892563F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.5892563F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.5892563F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15.5892563F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 37.6429749F));
+            tableLayoutPanel1.ColumnCount = 6;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.1523514F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.1523476F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.1523476F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.1523476F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.3906116F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 137F));
             tableLayoutPanel1.Controls.Add(DeleteButton, 3, 0);
             tableLayoutPanel1.Controls.Add(SaveButton, 2, 0);
             tableLayoutPanel1.Controls.Add(EditButton, 1, 0);
             tableLayoutPanel1.Controls.Add(AddButton, 0, 0);
-            tableLayoutPanel1.Controls.Add(groupBox1, 4, 0);
+            tableLayoutPanel1.Controls.Add(groupBox1, 5, 0);
+            tableLayoutPanel1.Controls.Add(ViewBTN, 4, 0);
             tableLayoutPanel1.Dock = DockStyle.Top;
             tableLayoutPanel1.Location = new Point(0, 78);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -83,9 +86,9 @@
             DeleteButton.Cursor = Cursors.Hand;
             DeleteButton.Dock = DockStyle.Fill;
             DeleteButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DeleteButton.Location = new Point(378, 3);
+            DeleteButton.Location = new Point(405, 3);
             DeleteButton.Name = "DeleteButton";
-            DeleteButton.Size = new Size(119, 40);
+            DeleteButton.Size = new Size(128, 40);
             DeleteButton.TabIndex = 3;
             DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = true;
@@ -96,9 +99,9 @@
             SaveButton.Cursor = Cursors.Hand;
             SaveButton.Dock = DockStyle.Fill;
             SaveButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaveButton.Location = new Point(253, 3);
+            SaveButton.Location = new Point(271, 3);
             SaveButton.Name = "SaveButton";
-            SaveButton.Size = new Size(119, 40);
+            SaveButton.Size = new Size(128, 40);
             SaveButton.TabIndex = 2;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
@@ -109,9 +112,9 @@
             EditButton.Cursor = Cursors.Hand;
             EditButton.Dock = DockStyle.Fill;
             EditButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            EditButton.Location = new Point(128, 3);
+            EditButton.Location = new Point(137, 3);
             EditButton.Name = "EditButton";
-            EditButton.Size = new Size(119, 40);
+            EditButton.Size = new Size(128, 40);
             EditButton.TabIndex = 1;
             EditButton.Text = "Edit";
             EditButton.UseVisualStyleBackColor = true;
@@ -124,7 +127,7 @@
             AddButton.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             AddButton.Location = new Point(3, 3);
             AddButton.Name = "AddButton";
-            AddButton.Size = new Size(119, 40);
+            AddButton.Size = new Size(128, 40);
             AddButton.TabIndex = 0;
             AddButton.Text = "Add";
             AddButton.UseVisualStyleBackColor = true;
@@ -134,9 +137,9 @@
             // 
             groupBox1.Controls.Add(textBox1);
             groupBox1.Dock = DockStyle.Fill;
-            groupBox1.Location = new Point(503, 3);
+            groupBox1.Location = new Point(668, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(297, 40);
+            groupBox1.Size = new Size(132, 40);
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "Search";
@@ -146,7 +149,7 @@
             textBox1.Dock = DockStyle.Fill;
             textBox1.Location = new Point(3, 16);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(291, 20);
+            textBox1.Size = new Size(126, 20);
             textBox1.TabIndex = 0;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -168,6 +171,19 @@
             button1.Text = "Back";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // ViewBTN
+            // 
+            ViewBTN.Cursor = Cursors.Hand;
+            ViewBTN.Dock = DockStyle.Fill;
+            ViewBTN.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ViewBTN.Location = new Point(539, 3);
+            ViewBTN.Name = "ViewBTN";
+            ViewBTN.Size = new Size(123, 40);
+            ViewBTN.TabIndex = 6;
+            ViewBTN.Text = "View";
+            ViewBTN.UseVisualStyleBackColor = true;
+            ViewBTN.Click += ViewBTN_Click;
             // 
             // sample2
             // 
@@ -194,5 +210,6 @@
         private TextBox textBox1;
         private Panel panel1;
         private Button button1;
+        private Button ViewBTN;
     }
 }

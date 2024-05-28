@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             nametxtbox = new TextBox();
             phonetxtbox = new TextBox();
             emailtxtbox = new TextBox();
@@ -45,11 +47,27 @@
             password_error_label = new Label();
             username_error_label = new Label();
             Emailerror_label = new Label();
+            dataGridView1 = new DataGridView();
+            userID_GV = new DataGridViewTextBoxColumn();
+            Name_GV = new DataGridViewTextBoxColumn();
+            username_GV = new DataGridViewTextBoxColumn();
+            PasswordGV = new DataGridViewTextBoxColumn();
+            Email_GV = new DataGridViewTextBoxColumn();
+            Phone_GV = new DataGridViewTextBoxColumn();
+            Status_GV = new DataGridViewTextBoxColumn();
+            label8 = new Label();
+            status_dropdown = new ComboBox();
+            statusError_label = new Label();
             LeftPanel.SuspendLayout();
+            RightPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // LeftPanel
             // 
+            LeftPanel.Controls.Add(statusError_label);
+            LeftPanel.Controls.Add(status_dropdown);
+            LeftPanel.Controls.Add(label8);
             LeftPanel.Controls.Add(Emailerror_label);
             LeftPanel.Controls.Add(username_error_label);
             LeftPanel.Controls.Add(password_error_label);
@@ -85,10 +103,15 @@
             LeftPanel.Controls.SetChildIndex(password_error_label, 0);
             LeftPanel.Controls.SetChildIndex(username_error_label, 0);
             LeftPanel.Controls.SetChildIndex(Emailerror_label, 0);
+            LeftPanel.Controls.SetChildIndex(label8, 0);
+            LeftPanel.Controls.SetChildIndex(status_dropdown, 0);
+            LeftPanel.Controls.SetChildIndex(statusError_label, 0);
             // 
             // RightPanel
             // 
+            RightPanel.Controls.Add(dataGridView1);
             RightPanel.Size = new Size(739, 566);
+            RightPanel.Controls.SetChildIndex(dataGridView1, 0);
             // 
             // nametxtbox
             // 
@@ -170,7 +193,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(12, 345);
+            label5.Location = new Point(12, 346);
             label5.Name = "label5";
             label5.Size = new Size(42, 17);
             label5.TabIndex = 10;
@@ -259,6 +282,118 @@
             Emailerror_label.Text = "*";
             Emailerror_label.Visible = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = SystemColors.Control;
+            dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { userID_GV, Name_GV, username_GV, PasswordGV, Email_GV, Phone_GV, Status_GV });
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Window;
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(0, 124);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(739, 442);
+            dataGridView1.TabIndex = 3;
+            dataGridView1.CellClick += dataGridView1_CellClick;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // userID_GV
+            // 
+            userID_GV.HeaderText = "User ID";
+            userID_GV.Name = "userID_GV";
+            userID_GV.ReadOnly = true;
+            userID_GV.Visible = false;
+            // 
+            // Name_GV
+            // 
+            Name_GV.HeaderText = "Name";
+            Name_GV.Name = "Name_GV";
+            Name_GV.ReadOnly = true;
+            // 
+            // username_GV
+            // 
+            username_GV.HeaderText = "Username";
+            username_GV.Name = "username_GV";
+            username_GV.ReadOnly = true;
+            // 
+            // PasswordGV
+            // 
+            PasswordGV.HeaderText = "Password";
+            PasswordGV.Name = "PasswordGV";
+            PasswordGV.ReadOnly = true;
+            PasswordGV.Visible = false;
+            // 
+            // Email_GV
+            // 
+            Email_GV.HeaderText = "Email";
+            Email_GV.Name = "Email_GV";
+            Email_GV.ReadOnly = true;
+            // 
+            // Phone_GV
+            // 
+            Phone_GV.HeaderText = "Phone No.";
+            Phone_GV.Name = "Phone_GV";
+            Phone_GV.ReadOnly = true;
+            // 
+            // Status_GV
+            // 
+            Status_GV.HeaderText = "Status";
+            Status_GV.Name = "Status_GV";
+            Status_GV.ReadOnly = true;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(12, 391);
+            label8.Name = "label8";
+            label8.Size = new Size(46, 17);
+            label8.TabIndex = 18;
+            label8.Text = "Status";
+            label8.Click += label8_Click;
+            // 
+            // status_dropdown
+            // 
+            status_dropdown.FormattingEnabled = true;
+            status_dropdown.Items.AddRange(new object[] { "Active", "In-active" });
+            status_dropdown.Location = new Point(12, 411);
+            status_dropdown.Name = "status_dropdown";
+            status_dropdown.Size = new Size(172, 23);
+            status_dropdown.TabIndex = 19;
+            status_dropdown.SelectedIndexChanged += status_dropdown_SelectedIndexChanged;
+            // 
+            // statusError_label
+            // 
+            statusError_label.AutoSize = true;
+            statusError_label.ForeColor = Color.Red;
+            statusError_label.Location = new Point(55, 393);
+            statusError_label.Name = "statusError_label";
+            statusError_label.Size = new Size(12, 15);
+            statusError_label.TabIndex = 20;
+            statusError_label.Text = "*";
+            statusError_label.Visible = false;
+            // 
             // Users
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -268,6 +403,8 @@
             Load += Users_Load;
             LeftPanel.ResumeLayout(false);
             LeftPanel.PerformLayout();
+            RightPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -290,5 +427,16 @@
         private Label password_error_label;
         private Label phone_error_label;
         private Label name_error_label;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn userID_GV;
+        private DataGridViewTextBoxColumn Name_GV;
+        private DataGridViewTextBoxColumn username_GV;
+        private DataGridViewTextBoxColumn PasswordGV;
+        private DataGridViewTextBoxColumn Email_GV;
+        private DataGridViewTextBoxColumn Phone_GV;
+        private DataGridViewTextBoxColumn Status_GV;
+        private Label label8;
+        private ComboBox status_dropdown;
+        private Label statusError_label;
     }
 }

@@ -18,7 +18,7 @@ namespace IMS
 
         public static DialogResult showMsg(string msg,string heading, string type)
         {
-            if (type == "success")
+            if (type == "Success")
             {
                 return MessageBox.Show(msg, heading, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

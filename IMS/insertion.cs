@@ -11,7 +11,7 @@ namespace IMS
 {
     class insertion
     {
-        public void insertuser(string name,string username, string password, string email,string phone)
+        public void insertuser(string name,string username, string password, string email,string phone,Int16 status)
         {
             try
             {
@@ -22,6 +22,7 @@ namespace IMS
                 cmd.Parameters.AddWithValue("@pwd",password);
                 cmd.Parameters.AddWithValue("@phone",phone);
                 cmd.Parameters.AddWithValue("@email",email);
+                cmd.Parameters.AddWithValue("@status", status);
 
                 MainClass.con.Open();
                 cmd.ExecuteNonQuery();

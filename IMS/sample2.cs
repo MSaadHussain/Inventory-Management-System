@@ -48,5 +48,10 @@ namespace IMS
         {
 
         }
+
+        public virtual void ViewBTN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -53,7 +53,7 @@
             LeftPanel.Controls.Add(database_label);
             LeftPanel.Controls.Add(server_text);
             LeftPanel.Controls.Add(label3);
-            LeftPanel.Size = new Size(200, 456);
+            LeftPanel.Size = new Size(200, 474);
             LeftPanel.Paint += LeftPanel_Paint;
             LeftPanel.Controls.SetChildIndex(label3, 0);
             LeftPanel.Controls.SetChildIndex(server_text, 0);
@@ -65,6 +65,10 @@
             LeftPanel.Controls.SetChildIndex(password_textbox_db, 0);
             LeftPanel.Controls.SetChildIndex(security_checkBox, 0);
             LeftPanel.Controls.SetChildIndex(Database_Save_button, 0);
+            // 
+            // RightPanel
+            // 
+            RightPanel.Size = new Size(655, 474);
             // 
             // label3
             // 
@@ -162,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(832, 456);
+            ClientSize = new Size(855, 474);
             Name = "settings";
             LeftPanel.ResumeLayout(false);
             LeftPanel.PerformLayout();
